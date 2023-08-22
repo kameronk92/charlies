@@ -14,9 +14,8 @@ class Unicorn
   end
 
   def add_power(*power)
-    require 'pry'; binding.pry
     @magical_powers << power
-    @magical_powers.flatten
+    @magical_powers = @magical_powers.flatten
   end
 
   def cast
@@ -27,3 +26,4 @@ class Unicorn
     end
   end
 end
+# require 'pry'; binding.pry
